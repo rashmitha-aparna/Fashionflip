@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFlip | Sell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="FashionFlip Logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="rent.html">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html" class="active">Sell</a>
+        <a href="ai.html">AI Stylist</a>
+    </nav>
+
+</header>
+
+
+<section class="sell-page">
+
+    <div class="sell-box">
+
+        <h1>Sell Your Fashion</h1>
+
+        <p>
+            Have clothes you no longer use? List them on FashionFlip
+            and reach people looking for affordable fashion.
+        </p>
+
+
+        <form onsubmit="submitListing(event)">
+
+            <label>Product Name</label>
+            <input
+                type="text"
+                id="productName"
+                placeholder="Example: Designer Lehenga"
+                required
+            >
+
+
+            <label>Category</label>
+
+            <select id="category" required>
+
+                <option value="">Select category</option>
+
+                <option>Lehenga</option>
+
+                <option>Saree</option>
+
+                <option>Wedding Wear</option>
+
+                <option>Party Wear</option>
+
+            </select>
+
+
+            <label>Price</label>
+
+            <input
+                type="number"
+                id="price"
+                min="1200"
+                placeholder="Minimum ₹1200"
+                required
+            >
+
+
+            <label>Condition</label>
+
+            <select id="condition" required>
+
+                <option value="">Select condition</option>
+
+                <option>Like New</option>
+
+                <option>Excellent</option>
+
+                <option>Good</option>
+
+            </select>
+
+
+            <label>Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Describe your product"
+                rows="5"
+                required
+            ></textarea>
+
+
+            <label>Upload Product Photo</label>
+
+            <input
+                type="file"
+                id="productImage"
+                accept="image/*"
+            >
+
+
+            <button type="submit">
+                List My Fashion
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <h2>FashionFlip</h2>
+    <p>Rent • Thrift • Buy • Sell • AI Fashion</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

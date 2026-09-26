@@ -1,0 +1,1179 @@
+/* ==================================================
+   FASHIONFLIP
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fb;
+    color: #333;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.header {
+    min-height: 78px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 8px 5%;
+
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo img {
+    width: 145px;
+
+    height: 65px;
+
+    object-fit: contain;
+}
+
+
+.navbar {
+    display: flex;
+
+    gap: 26px;
+
+    align-items: center;
+}
+
+
+.navbar a {
+    color: #444;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #d12d78;
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 430px;
+
+    background: #fff0f6;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.hero-image {
+    width: 100%;
+
+    max-width: 1100px;
+
+    height: 430px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    margin: auto;
+}
+
+
+.hero-content {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 35px;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    max-width: 600px;
+
+    background: rgba(255,255,255,0.94);
+
+    padding: 20px 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+
+.hero-content h1 {
+    color: #c92f78;
+
+    font-size: 30px;
+
+    margin-bottom: 7px;
+}
+
+
+.hero-content p {
+    color: #555;
+
+    font-size: 15px;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+.btn {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.primary {
+    background: #d12d78;
+
+    color: white;
+}
+
+
+.primary:hover {
+    background: #b52264;
+}
+
+
+.secondary {
+    background: white;
+
+    color: #d12d78;
+
+    border: 1px solid #d12d78;
+}
+
+
+.secondary:hover {
+    background: #fff0f6;
+}
+
+
+.dark {
+    background: #2d2430;
+
+    color: white;
+}
+
+
+/* ==================================================
+   GENERAL SECTIONS
+   ================================================== */
+
+.section {
+    padding: 55px 5%;
+}
+
+
+.white-section {
+    background: white;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading h2 {
+    font-size: 28px;
+
+    color: #c92f78;
+
+    margin-bottom: 7px;
+}
+
+
+.section-heading p {
+    color: #777;
+}
+
+
+/* ==================================================
+   SERVICE CARDS
+   ================================================== */
+
+.service-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.service-card {
+    padding: 30px 22px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    color: #333;
+
+    transition: 0.25s;
+
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.rent-card {
+    background: #ffe4ef;
+}
+
+
+.thrift-card {
+    background: #e4f8e9;
+}
+
+
+.buy-card {
+    background: #fff0d9;
+}
+
+
+.service-icon {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+.service-card p {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+
+.service-card span {
+    color: #c92f78;
+
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   HOMEPAGE MINI PRODUCTS
+   ================================================== */
+
+.mini-products {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.mini-product {
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 15px;
+
+    transition: 0.2s;
+}
+
+
+.mini-product:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.mini-product img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+.mini-product h3 {
+    margin: 13px 0 8px;
+}
+
+
+.mini-product a {
+    color: #d12d78;
+
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   AI SECTION
+   ================================================== */
+
+.ai-section {
+    background: #fbe5f0;
+
+    padding: 55px 8%;
+
+    text-align: center;
+}
+
+
+.ai-section h2 {
+    font-size: 30px;
+
+    color: #c92f78;
+
+    margin: 8px 0;
+}
+
+
+.ai-section p {
+    max-width: 600px;
+
+    margin: 0 auto 20px;
+
+    color: #555;
+}
+
+
+.small-label {
+    color: #d12d78;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==================================================
+   SELL SECTION
+   ================================================== */
+
+.sell-section {
+    padding: 55px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+
+.sell-section h2 {
+    color: #333;
+
+    font-size: 29px;
+
+    margin-bottom: 10px;
+}
+
+
+.sell-section p {
+    max-width: 650px;
+
+    margin: 0 auto 20px;
+
+    color: #666;
+}
+
+
+/* ==================================================
+   FEATURES
+   ================================================== */
+
+.feature-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.feature {
+    background: white;
+
+    padding: 25px 18px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    border: 1px solid #eee;
+}
+
+
+.feature > div {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.feature h3 {
+    margin-bottom: 7px;
+}
+
+
+.feature p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   MARKET
+   ================================================== */
+
+.market-section {
+    padding: 55px 5%;
+
+    background: #fff0f6;
+}
+
+
+.market-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.market-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    border: 1px solid #eee;
+}
+
+
+.market-card h3 {
+    color: #d12d78;
+
+    margin-bottom: 8px;
+}
+
+
+.market-card strong {
+    display: block;
+
+    font-size: 27px;
+
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+
+.market-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   FINAL CTA
+   ================================================== */
+
+.final-cta {
+    padding: 55px 20px;
+
+    text-align: center;
+
+    background: #fff;
+}
+
+
+.final-cta h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.final-cta p {
+    margin-bottom: 18px;
+
+    color: #666;
+}
+
+
+/* ==================================================
+   MARKETPLACE
+   ================================================== */
+
+.marketplace {
+    padding: 45px 4% 70px;
+
+    min-height: 75vh;
+}
+
+
+.marketplace-title {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.marketplace-title h1 {
+    color: #c92f78;
+
+    font-size: 34px;
+
+    margin-bottom: 7px;
+}
+
+
+.marketplace-title p {
+    color: #777;
+}
+
+
+/* ==================================================
+   PRODUCT GRID
+   ================================================== */
+
+.product-grid {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+.product-card {
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+.product-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+
+.product-card > img {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    background: #f5f5f5;
+}
+
+
+.product-info {
+    padding: 14px;
+}
+
+
+.product-info h3 {
+    font-size: 16px;
+
+    margin-bottom: 4px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.product-info p {
+    color: #888;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+
+.product-info strong {
+    display: block;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+}
+
+
+.product-info button {
+    width: 100%;
+
+    border: none;
+
+    background: #d12d78;
+
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.product-info button:hover {
+    background: #b52264;
+}
+
+
+/* ==================================================
+   SELL PAGE
+   ================================================== */
+
+.sell-page {
+    min-height: 75vh;
+
+    padding: 50px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    background: #fff8fb;
+}
+
+
+.sell-box {
+    width: 100%;
+
+    max-width: 600px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.sell-box h1 {
+    color: #c92f78;
+
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+
+.sell-box > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.sell-box label {
+    display: block;
+
+    margin: 14px 0 6px;
+
+    font-weight: 600;
+}
+
+
+.sell-box input,
+.sell-box select,
+.sell-box textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+}
+
+
+.sell-box form button {
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 12px;
+
+    background: #d12d78;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   AI PAGE
+   ================================================== */
+
+.ai-page {
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+.ai-box {
+    width: 100%;
+
+    max-width: 550px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+
+.ai-icon {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.ai-box h1 {
+    color: #c92f78;
+
+    margin-bottom: 8px;
+}
+
+
+.ai-box > p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.ai-box label {
+    display: block;
+
+    text-align: left;
+
+    margin: 14px 0 6px;
+
+    font-weight: 600;
+}
+
+
+.ai-box select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+}
+
+
+.ai-box button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #d12d78;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.ai-result {
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: #fff0f6;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.footer {
+    background: #2d2430;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+.footer h2 {
+    color: #ff8fc1;
+
+    margin-bottom: 5px;
+}
+
+
+.footer p {
+    color: #ddd;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 1050px) {
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mini-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 10px;
+    }
+
+
+    .navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+        min-height: 380px;
+    }
+
+
+    .hero-image {
+        height: 380px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .product-card > img {
+        height: 280px;
+    }
+
+
+    .market-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .logo img {
+        width: 125px;
+
+        height: 55px;
+    }
+
+
+    .navbar {
+        gap: 10px;
+    }
+
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        min-height: 350px;
+    }
+
+
+    .hero-image {
+        height: 350px;
+    }
+
+
+    .hero-content {
+        bottom: 15px;
+
+        padding: 14px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+
+    .section {
+        padding: 40px 15px;
+    }
+
+
+    .mini-products {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .mini-product img {
+        height: 200px;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 9px;
+    }
+
+
+    .product-card > img {
+        height: 230px;
+    }
+
+
+    .product-info {
+        padding: 9px;
+    }
+
+
+    .product-info h3 {
+        font-size: 13px;
+    }
+
+
+    .product-info strong {
+        font-size: 15px;
+    }
+
+}

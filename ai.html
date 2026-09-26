@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionFlip | AI Stylist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="FashionFlip Logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="rent.html">Rent</a>
+        <a href="thrift.html">Thrift</a>
+        <a href="buy.html">Buy</a>
+        <a href="sell.html">Sell</a>
+        <a href="ai.html" class="active">AI Stylist</a>
+    </nav>
+
+</header>
+
+
+<section class="ai-page">
+
+    <div class="ai-box">
+
+        <div class="ai-icon">🤖</div>
+
+        <h1>FashionFlip AI Stylist</h1>
+
+        <p>
+            Tell us about your occasion and FashionFlip will suggest
+            an outfit style for you.
+        </p>
+
+
+        <label>Choose Occasion</label>
+
+        <select id="occasion">
+
+            <option>Wedding</option>
+
+            <option>Party</option>
+
+            <option>Festival</option>
+
+            <option>College Event</option>
+
+            <option>Date Night</option>
+
+        </select>
+
+
+        <label>Choose Style</label>
+
+        <select id="styleChoice">
+
+            <option>Traditional</option>
+
+            <option>Modern</option>
+
+            <option>Elegant</option>
+
+            <option>Trendy</option>
+
+        </select>
+
+
+        <button onclick="recommendOutfit()">
+            Get AI Recommendation
+        </button>
+
+
+        <div id="ai-result" class="ai-result"></div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <h2>FashionFlip</h2>
+    <p>Rent • Thrift • Buy • Sell • AI Fashion</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
